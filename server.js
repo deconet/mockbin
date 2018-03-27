@@ -12,9 +12,8 @@ var options = {
   redis: process.env.MOCKBIN_REDIS || pkg.config.redis
 }
 
-console.info('process.env.port is %d', process.env.PORT)
-console.info('pkg.config.port is %d', pkg.config.port)
-
 app(options, function () {
+  console.info('process.env.port is %d', process.env.PORT)
+  console.info('pkg.config.port is %d', pkg.config.port)
   console.info('starting server on port: %d', options.port)
 })

@@ -45,7 +45,7 @@
     }
   },
   "scripts": {
-    "start": "node bin/mockbin",
+    "start": "node server.js",
     "test": "mocha --recursive",
     "pretest": "standard && echint",
     "coverage": "istanbul cover --dir coverage _mocha -- --recursive --fgrep 'Request Validation' --invert --reporter dot",
